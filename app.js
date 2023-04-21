@@ -49,7 +49,7 @@ function generateSigne() {
     var signeJoueur2 = generateSigne();
     var roundWinner = determineWinner(signeJoueur1, signeJoueur2);
     var roundLooser = determineLooser(signeJoueur1, signeJoueur2);
-    console.log("Manche " + manche + " : \x1b[34mJoueur \x1b[38;2;255;165;0m" + signeJoueur1 + "\x1b[37m - \x1b[38;2;255;165;0m" + signeJoueur2 + " \x1b[34mJoueur 2\x1b[37m\nLe gagnant de cette manche est :\x1b[32m " + roundWinner + "\x1b[37m, le perdant est :\x1b[31m " + roundLooser + "\x1b[37m");
+    console.log("Manche " + manche + " : \x1b[34mJoueur 1 \x1b[38;2;255;165;0m" + signeJoueur1 + "\x1b[37m - \x1b[38;2;255;165;0m" + signeJoueur2 + " \x1b[34mJoueur 2\x1b[37m\nLe gagnant de cette manche est :\x1b[32m " + roundWinner + "\x1b[37m, le perdant est :\x1b[31m " + roundLooser + "\x1b[37m");
     
     var vainqueur = determineWinner(signeJoueur1, signeJoueur2);
     if (vainqueur === "Joueur 1") {
@@ -77,7 +77,7 @@ function generateSigne() {
         looser = "Joueur 2";
     }
   
-  console.log("Score final : Joueur 1 " + scoreJoueur1 + " - " + scoreJoueur2 + " Joueur 2");
+  console.log("Score final : \x1b[34mJoueur 1\x1b[37m " + scoreJoueur1 + " - " + scoreJoueur2 + " \x1b[34mJoueur 2 \x1b[37m");
   console.log("Le gagnant est : \x1b[32m " + winner + "\x1b[37m");
   console.log("Le perdant est : \x1b[31m " + looser + "\x1b[37m");
   console.log("Merci d'avoir joué !");
