@@ -1,15 +1,13 @@
 function generateSigne() {
-
-    var choix = Math.floor(Math.random() * 3);
-
-    if (choix === 0) {
-      return "Pierre";
-    } else if (choix === 1) {
-      return "Feuille";
-    } else {
-      return "Ciseau";
-    }
+  var choix = Math.floor(Math.random() * 3);
+  if (choix === 0) {
+    return "Pierre";
+  } else if (choix === 1) {
+    return "Feuille";
+  } else {
+    return "Ciseau";
   }
+}
   function determineWinner(signe1, signe2) {
     if (signe1 === signe2) {
       return "Egalité";
@@ -39,6 +37,8 @@ function generateSigne() {
     }
   
   
+
+  function play() {
   var manche = 1;
   var scoreJoueur1 = 0;
   var scoreJoueur2 = 0;
@@ -63,22 +63,28 @@ function generateSigne() {
   
   var winner;
   if (scoreJoueur1 > scoreJoueur2) {
-    winner = "Joueur 1";
+     winner = "Joueur 1";
   } else if (scoreJoueur2 > scoreJoueur1) {
-    winner = "Joueur 2";
-  } else {
-    winner = "Egalité";
+     winner = "Joueur 2";
+  } else if (scoreJoueur1 === scoreJoueur2) {
+     winner = "Egalité";
   }
 
   var looser;
     if (scoreJoueur1 < scoreJoueur2) {
-        looser = "Joueur 1";
+         looser = "Joueur 1";
     } else if (scoreJoueur2 < scoreJoueur1) {
-        looser = "Joueur 2";
+         looser = "Joueur 2";
+    } else if (scoreJoueur1 === scoreJoueur2) {
+         looser = "Egalité";
     }
-  
+
   console.log("Score final : \x1b[34mJoueur 1\x1b[37m " + scoreJoueur1 + " - " + scoreJoueur2 + " \x1b[34mJoueur 2 \x1b[37m");
   console.log("Le gagnant est : \x1b[32m " + winner + "\x1b[37m");
   console.log("Le perdant est : \x1b[31m " + looser + "\x1b[37m");
   console.log("Merci d'avoir joué !");
-  
+  return winner;
+  }
+ play();
+
+  module.exports = { generateSigne, determineWinner, determineLooser, play };
