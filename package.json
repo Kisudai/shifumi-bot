@@ -1,0 +1,25 @@
+{
+  "name": "cours-alexandre-l",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000h\u0000i\u0000f\u0000u\u0000m\u0000i\u0000-\u0000b\u0000o\u0000t\u0000 \u0000c\u0000r\u0000e\u0000a\u0000t\u0000e\u0000d\u0000 \u0000b\u0000y\u0000 \u0000S\u0000a\u0000m\u0000u\u0000e\u0000l\u0000 \u0000R\u0000e\u0000v\u0000e\u0000l\u0000e\u0000a\u0000u\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest",
+    "shifumi": "node app.js",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kisudai/shifumi-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kisudai/shifumi-bot/issues"
+  },
+  "homepage": "https://github.com/Kisudai/shifumi-bot#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
