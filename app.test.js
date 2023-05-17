@@ -1,6 +1,11 @@
 const { generateSigne, play  } = require('./app');
 
-    test('generateSigne renvoie l\'une des trois options Pierre, Feuille, ou Ciseau', () => {
+    test('generateSigne renvoie une chaine de caractères', () => {
+        const signe = generateSigne();
+        expect(typeof signe).toBe('string');
+    });
+
+    test('generateSigne renvoie 2012012une des trois options Pierre, Feuille, ou Ciseau', () => {
         const signe = generateSigne();
         expect(signe).toMatch(/^(Pierre|Feuille|Ciseau)$/);
     });

@@ -7,7 +7,9 @@
     "start": "node main.js",
     "test": "jest",
     "shifumi": "node app.js",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "person" : "jest person.test.js",
+    "appPerson" : "jest appPerson.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
   "homepage": "https://github.com/Kisudai/shifumi-bot#readme",
   "dependencies": {
     "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.1"
   }
 }
